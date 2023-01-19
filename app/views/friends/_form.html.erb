@@ -14,28 +14,24 @@
   <div class="form-group">
     <%= form.text_field :first_name, class:"form-control", placeholder: "First Name" %>
   </div>
-
+<br/>
   <div class="form-group">
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name, class:"form-control" %>
+    <%= form.text_field :last_name, class:"form-control", placeholder: "Last Name" %>
   </div>
-
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+<br/>
+  <div class="form-group">
+    <%= form.text_field :email, class:"form-control", placeholder: "Email" %>
   </div>
-
-  <div>
-    <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
+<br/>
+  <div class="form-group">
+    <%= form.text_field :phone, class:"form-control", placeholder: "Phone" %>
   </div>
-
-  <div>
-    <%= form.label :linkdin, style: "display: block" %>
-    <%= form.text_field :linkdin %>
+<br/>
+  <div class="form-group">
+    <%= form.text_field :linkdin, class:"form-control", placeholder: "Linkdin" %>
   </div>
 <br/>
   <div>
-    <%= form.submit %>
+    <%= form.submit%>
   </div>
 <% end %>
