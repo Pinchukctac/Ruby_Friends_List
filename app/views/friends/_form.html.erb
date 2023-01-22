@@ -11,27 +11,38 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= form.text_field :first_name, class:"form-control", placeholder: "First Name" %>
+<div class="card">
+  <div class="card-header">
+    <h4>New Friend</h4>
   </div>
-<br/>
-  <div class="form-group">
-    <%= form.text_field :last_name, class:"form-control", placeholder: "Last Name" %>
+  <div class="card-body">
+    <div class="form-group">
+      <%= form.text_field :first_name, class:"form-control", placeholder: "First Name" %>
+    </div>
+    <br/>
+    <div class="form-group">
+      <%= form.text_field :last_name, class:"form-control", placeholder: "Last Name" %>
+    </div>
+    <br/>
+    <div>
+      <%= form.text_field :email, class:"form-control", placeholder: "Email" %>
+    </div>
+    <br/>
+    <div>
+      <%= form.text_field :phone, class:"form-control", placeholder: "Phone" %>
+    </div>
+    <br/>
+    <div>
+      <%= form.text_field :linkdin, class:"form-control", placeholder: "Linkdin" %>
+    </div>
+    <br/>
+    <div>
+      <%= form.submit class:"btn btn-secondary" %>
+    </div>
+    <% end %>
   </div>
-<br/>
-  <div class="form-group">
-    <%= form.text_field :email, class:"form-control", placeholder: "Email" %>
-  </div>
-<br/>
-  <div class="form-group">
-    <%= form.text_field :phone, class:"form-control", placeholder: "Phone" %>
-  </div>
-<br/>
-  <div class="form-group">
-    <%= form.text_field :linkdin, class:"form-control", placeholder: "Linkdin" %>
-  </div>
-<br/>
-  <div>
-    <%= form.submit%>
-  </div>
-<% end %>
+</div>
+
+
+
+
